@@ -11,12 +11,6 @@ permissions:
 
 jobs:
    setup-deepseek-review:
-     runs-on: ubuntu-latest
-     name: Code Review
-     steps:
-       - uses: actions/checkout@v4
-         with:
-           fetch-depth: 2
        - name: DeepSeek Code Review
          uses: hustcer/deepseek-review@v1
          with:

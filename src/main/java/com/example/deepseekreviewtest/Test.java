@@ -10,7 +10,7 @@ public class Test {
     AAAA() {
         System
                 .out
-                
+
                 .println("Test 2");
     }
 }

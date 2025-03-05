@@ -21,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Code Review
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
       - name: DeepSeek Code Review
         uses: hustcer/deepseek-review@v1
         with:

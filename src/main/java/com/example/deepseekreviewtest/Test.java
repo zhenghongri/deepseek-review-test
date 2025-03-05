@@ -8,6 +8,7 @@ public class Test {
 //        注释
         System.
 
+                //测试
 
 
          out.
@@ -20,6 +21,7 @@ public class Test {
 //        注释
         System.
 
+                //测试
 
                 out.
 
@@ -27,7 +29,7 @@ public class Test {
     }
 
     public void
-            
+            //测试
     AAAA() {
         System
                 .out

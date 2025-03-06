@@ -10,17 +10,17 @@ permissions:
   pull-requests: write
 
 jobs:
-  setup-deepseek-review:
-    runs-on: ubuntu-latest
-    name: Code Review
-    steps:
-      - name: DeepSeek Code Review
-        uses: hustcer/deepseek-review@v1
-        with:
-          chat-token: sk-912721c3ef0540e7a7615e430c33e709
-          exclude-patterns: "*.md, *.txt"
-          max-length: 2000
-          temperature: 0.7
+  steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+    - name: DeepSeek Code Review
+      uses: hustcer/deepseek-review@v1
+      with:
+        chat-token: ${{DEEPSEEK_KEY}}
+        exclude-patterns: "*.md, *.txt"
+        max-length: 2000
+        temperature: 0.7
 
 #  setup-deepseek-review:
 #    runs-on: ubuntu-latest

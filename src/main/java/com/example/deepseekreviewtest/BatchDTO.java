@@ -31,10 +31,7 @@ public class BatchDTO implements Serializable {
     public Map<String, String> toMap() {
         Map<String, String> map = new HashMap<>();
 
-
         map.put("clientCode", clientCode);
-
-
         map.put("warehouseCode", warehouseCode);
         map.put("batchNo", batchNo);
         map.put("taskNo", taskNo);

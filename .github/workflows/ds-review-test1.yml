@@ -17,7 +17,7 @@ jobs:
     - name: DeepSeek Code Review
       uses: hustcer/deepseek-review@v1
       with:
-        chat-token: ${{DEEPSEEK_KEY}}
+        chat-token: ${{secrets.DEEPSEEK_KEY}}
         exclude-patterns: "*.md, *.txt"
         max-length: 2000
         temperature: 0.7

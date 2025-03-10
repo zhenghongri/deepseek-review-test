@@ -8,7 +8,7 @@ public class CreateInsertSqlMethod {
 
 
     public static void simpleRead() {
-        String fileName = "20250307-未POD的订单列表.xls";
+        String fileName = "EMP-DN-2025-03-10-未POD的列表.xlsx";
         // 这里 需要指定读用哪个class去读，然后读取第一个sheet 文件流会自动关闭
         EasyExcel.read(fileName, BatchDTO.class, new ExcelImportListener()).sheet().doRead();
     }

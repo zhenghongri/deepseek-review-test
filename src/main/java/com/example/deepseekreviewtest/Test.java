@@ -18,12 +18,17 @@ public class Test {
     public void A_1() {
 //        这是
 //        中文
+
 //        注释
         System.
+
+
 
                 //测试
 
                 out.
+
+
 
                 println("Test A_1");
     }
